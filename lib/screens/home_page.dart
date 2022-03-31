@@ -25,12 +25,14 @@ class HomePage extends StatelessWidget {
             padding: EdgeInsets.all(16),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
-                Text("Work", style: TextStyle(fontFamily: "Nico")),
-                SizedBox(width: 15),
-                Text("About Me", style: TextStyle(fontFamily: "Nico")),
-                SizedBox(width: 15),
-                Text("Contact Me", style: TextStyle(fontFamily: "Nico")),
+              children: [
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    "Contact Me",
+                    style: TextStyle(fontFamily: "Nico",color: textColor),
+                  ),
+                ),
                 SizedBox(width: 15),
               ],
             ),

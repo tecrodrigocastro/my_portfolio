@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:redrodrigo_portfolio/screens/home_page.dart';
+import 'package:redrodrigo_portfolio/utils/color.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Rodrigo Castro',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple,
       ),
       home: const HomePage(),
     );
