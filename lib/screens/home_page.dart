@@ -26,11 +26,15 @@ class HomePage extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                TextButton(
-                  onPressed: () {},
+                SizedBox(width: 15),
+                GestureDetector(
+                  onTap: () {
+                    String url = "mailto:tec.rodrigocastro@gmail.com";
+                    launch(url);
+                  },
                   child: Text(
                     "Contact Me",
-                    style: TextStyle(fontFamily: "Nico",color: textColor),
+                    style: TextStyle(fontFamily: "Nico", color: textColor),
                   ),
                 ),
                 SizedBox(width: 15),
