@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:redrodrigo_portfolio/utils/color.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -45,16 +47,90 @@ class HomePage extends StatelessWidget {
                   image: AssetImage("images/back1.jpeg"),
                 ),
               ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image(
+                    height: 100,
+                    width: 100,
+                    image: AssetImage(
+                      "images/flutter.png",
+                    ),
+                  ),
+                  SizedBox(height: 10),
+                  Text(
+                    "Flutter Developer",
+                    style: TextStyle(
+                        fontFamily: "Nico",
+                        fontWeight: FontWeight.bold,
+                        color: textColor,
+                        fontSize: 35),
+                  ),
+                  SizedBox(height: 10),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      TextButton(
+                        onPressed: () {
+                          String url = "https://github.com/tecrodrigocastro";
+                          launch(url);
+                        },
+                        child: FaIcon(
+                          FontAwesomeIcons.github,
+                          color: textColor,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          String url =
+                              "https://www.linkedin.com/in/rodrigo-castro-8422a7145/";
+                          launch(url);
+                        },
+                        child: FaIcon(
+                          FontAwesomeIcons.linkedin,
+                          color: textColor,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          String url = "https://www.instagram.com/redrodrigoc/";
+                          launch(url);
+                        },
+                        child: FaIcon(
+                          FontAwesomeIcons.instagram,
+                          color: textColor,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          String url = "mailto:tec.rodrigocastro@gmail.com";
+                          launch(url);
+                        },
+                        child: Icon(
+                          Icons.email_outlined,
+                          color: textColor,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
             Container(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height / 3,
+              height: MediaQuery.of(context).size.height,
               color: Colors.red,
+              child: Center(
+                child: Text("em construção"),
+              ),
             ),
             Container(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height / 3,
+              height: MediaQuery.of(context).size.height,
               color: Colors.blue,
+              child: Center(
+                child: Text("em construção"),
+              ),
             ),
           ],
         ),
