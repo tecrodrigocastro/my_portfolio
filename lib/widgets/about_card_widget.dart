@@ -45,7 +45,7 @@ Widget aboutCard(context) {
         style: TextStyle(color: textColor),
       ),
       Text(
-        "Formado em Análise e Desenvolvimento de Sistemas, começei nesse mundo em 2014,",
+        "Formado em Análise e Desenvolvimento de Sistemas, comecei nesse mundo em 2014,",
         style: TextStyle(color: textColor),
       ),
       Text(
