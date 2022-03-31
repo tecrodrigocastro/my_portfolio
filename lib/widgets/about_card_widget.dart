@@ -5,7 +5,6 @@ import 'package:redrodrigo_portfolio/utils/color.dart';
 Widget aboutCard(context) {
   return Column(
     children: [
-      SizedBox(height: 20),
       Text(
         "ABOUT ME",
         style: TextStyle(
@@ -61,7 +60,7 @@ Widget aboutCard(context) {
         "Pretendo me tornar um Flutter Developer Expert.",
         style: TextStyle(color: textColor),
       ),
-      SizedBox(height: 25),
+      SizedBox(height: 20),
       Text(
         "HABILIDADES",
         style: TextStyle(color: textColor, fontFamily: "Nico"),
