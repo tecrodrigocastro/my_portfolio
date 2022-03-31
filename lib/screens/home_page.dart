@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:redrodrigo_portfolio/utils/color.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:redrodrigo_portfolio/widgets/about_me_widget.dart';
+import 'package:redrodrigo_portfolio/widgets/contact_me_widget.dart';
 import 'package:redrodrigo_portfolio/widgets/home_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -216,8 +217,8 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            Divider(),
             aboutWidget(context),
+            contactMe(context)
           ],
         ),
       ),
