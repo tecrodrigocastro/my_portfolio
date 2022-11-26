@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:redrodrigo_portfolio/utils/color.dart';
+import 'package:redrodrigo_portfolio/version1/utils/color.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 Widget homeWidget(context) {

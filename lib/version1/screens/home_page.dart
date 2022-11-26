@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:redrodrigo_portfolio/utils/color.dart';
+import 'package:redrodrigo_portfolio/version1/utils/color.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:redrodrigo_portfolio/widgets/about_me_widget.dart';
-import 'package:redrodrigo_portfolio/widgets/contact_me_widget.dart';
-import 'package:redrodrigo_portfolio/widgets/home_widget.dart';
+import 'package:redrodrigo_portfolio/version1/widgets/about_me_widget.dart';
+import 'package:redrodrigo_portfolio/version1/widgets/contact_me_widget.dart';
+import 'package:redrodrigo_portfolio/version1/widgets/home_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: Text(
-          "RODRIGO CASTRO",
+          "RED RODRIGO",
           style: TextStyle(fontFamily: "Nico"),
         ),
         actions: [

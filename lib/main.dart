@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:redrodrigo_portfolio/screens/home_page.dart';
-import 'package:redrodrigo_portfolio/utils/color.dart';
+import 'package:redrodrigo_portfolio/version1/screens/home_page.dart';
+import 'package:redrodrigo_portfolio/version1/utils/color.dart';
 
 void main() {
   runApp(const MyApp());

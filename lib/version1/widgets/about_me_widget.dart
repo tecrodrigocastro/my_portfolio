@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:redrodrigo_portfolio/utils/color.dart';
-import 'package:redrodrigo_portfolio/widgets/about_card_widget.dart';
+import 'package:redrodrigo_portfolio/version1/utils/color.dart';
+import 'package:redrodrigo_portfolio/version1/widgets/about_card_widget.dart';
 
 Widget aboutWidget(context) {
   return Container(
