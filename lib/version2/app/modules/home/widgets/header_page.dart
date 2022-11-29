@@ -63,7 +63,7 @@ class HeaderPage extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Text(
                   'Eu crio Apps e WebApps onde as tecnologias \natendem à criatividade',
                   style: TextStyle(
@@ -72,25 +72,37 @@ class HeaderPage extends StatelessWidget {
                     fontSize: 16,
                   ),
                 ),
-                SizedBox(height: 15),
-                Container(
-                  height: 40,
-                  width: 100,
-                  decoration: BoxDecoration(
-                    border: Border.all(color: primaryColor),
+                const SizedBox(height: 15),
+                InkWell(
+                  onTap: () => sectionClick(3),
+                  child: Container(
+                    height: 35,
+                    width: 140,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: primaryColor),
+                    ),
+                    child: Center(
+                      child: Text(
+                        'Contact me !!',
+                        style: TextStyle(color: textColor),
+                      ),
+                    ),
                   ),
                 ),
-                OutlinedButton(
-                  style:
-                      OutlinedButton.styleFrom(backgroundColor: primaryColor),
-                  onPressed: () {
-                    sectionClick(3);
-                  },
-                  child: Text(
-                    'Contact me !!',
-                    style: TextStyle(color: textColor),
+                Visibility(
+                  visible: false,
+                  child: OutlinedButton(
+                    style:
+                        OutlinedButton.styleFrom(backgroundColor: primaryColor),
+                    onPressed: () {
+                      sectionClick(3);
+                    },
+                    child: Text(
+                      'Contact me !!',
+                      style: TextStyle(color: textColor),
+                    ),
                   ),
-                )
+                ),
               ],
             ),
             Stack(
@@ -123,23 +135,62 @@ class HeaderPage extends StatelessWidget {
                   right: 70,
                   left: 50,
                   child: Container(
-                    height: 20,
+                    height: 40,
                     width: 200,
                     decoration: BoxDecoration(
                       color: backgroundColor,
                       border: Border.all(color: primaryColor),
                     ),
                     child: Center(
-                      child: Text(
-                        'RED RODRIGO',
-                        style: TextStyle(color: textColor),
-                      ),
-                    ),
+                        child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Image(image: AssetImage('images/icons/github.png')),
+                        Image(image: AssetImage('images/icons/linkedin.png')),
+                        Image(image: AssetImage('images/icons/email.png')),
+                        Text(
+                          'RODRIGO CASTRO 😎',
+                          style: TextStyle(color: textColor),
+                        ),
+                      ],
+                    )),
                   ),
                 )
               ],
             )
           ],
+        ),
+        const Spacer(),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.only(bottom: 100),
+            child: Container(
+              height: 70,
+              width: 500,
+              decoration: BoxDecoration(
+                border: Border.all(color: primaryColor),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Center(
+                    child: Text(
+                      '"The first duty of intelligence is to doubt itself"',
+                      style: TextStyle(color: textColor),
+                    ),
+                  ),
+                  Divider(color: backgroundColor),
+                  Align(
+                    alignment: Alignment.bottomRight,
+                    child: Text(
+                      '- Albert Einstein ',
+                      style: TextStyle(color: textColor),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ),
       ],
     );

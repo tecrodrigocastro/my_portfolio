@@ -12,9 +12,8 @@ PreferredSize customAppBar(SectionCallback sectionClick) {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              'RED RODRIGO',
-              style: TextStyle(color: textColor),
+            const Image(
+              image: AssetImage('images/logo1.png'),
             ),
             Row(
               children: [
